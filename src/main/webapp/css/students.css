@@ -1,0 +1,15 @@
+.container {
+    position: relative;
+    clear:both;
+}
+.left {
+    position: relative;
+    float:left;
+    width:25%;
+}
+
+.right {
+    position: relative;
+    float:left;
+    width:25%;
+}

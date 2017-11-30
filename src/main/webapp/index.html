@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/students.css"/>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/students.js"></script>
+</head>
+<body>
+<h3>1. Выберите студента из списка слева</h3>
+<h3>2. Выберите предметы из списка справа</h3>
+<h3>3. Нажмите кнопку "Сохранить"</h3>
+<form id="link">
+    <div class = "container">
+        <div class="left">
+            <select id="students" name="students" onchange="getStudentSubjects()">
+
+            </select>
+        </div>
+        <div class="right">
+            <select id="subjects" name="subjects" multiple>
+
+            </select>
+        </div>
+    </div>
+</form>
+<div class="container">
+    <button onclick="saveSubjects()">Сохранить</button>
+    <button onclick="reloadLists()">Обновить</button>
+</div>
+
+</body>
+</html>
